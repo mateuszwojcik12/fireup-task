@@ -8,7 +8,7 @@ import java.util.UUID;
 @Getter
 public class BaseEntity {
 
-    protected String id;
+    private String id;
 
     public BaseEntity() {
         generateId();
@@ -16,5 +16,9 @@ public class BaseEntity {
 
     private void generateId() {
         this.id = UUID.randomUUID().toString();
+    }
+
+    protected void setId(String id) {
+        this.id = id;
     }
 }

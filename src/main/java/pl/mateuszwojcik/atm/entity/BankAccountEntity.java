@@ -21,6 +21,6 @@ public class BankAccountEntity extends BaseEntity{
             return false;
         }
         BankAccountEntity bankAccountEntity = (BankAccountEntity) obj;
-        return this.id.equals(bankAccountEntity.getId());
+        return this.getId().equals(bankAccountEntity.getId());
     }
 }
